@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--FONT CSS-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!---CUSTOM JS-->
+   <script src="script.js"></script>
+
+   <!---CUSTOM CSS-->
+   <link rel="stylesheet" href="style.css">
+
+   <!---TITLE-->
+   <title>AirBnB-Home-Rents</title>
+</head>
+<body>
+   
+   <!--=======header SECTION START========-->
+   <header class="header">
+      <nav class="navbar nav-1">
+         <section class="flex">
+            <a href="home.html" class="logo"><i class='bx bx-building-house'></i>AirBnB-Home-Rents</a>
+
+            <ul>
+               <li><a href="#">Post Property <i class='bx bxs-paper-plane' ></i></a></li>
+            </ul>
+         </section>
+      </nav>
+
+      <nav class="navbar nav-2">
+         <section class="flex">
+            <div id="menu-btn" class="bx bx-menu"></div>
+
+            <div class="menu">
+               <ul>
+                  <li><a href="#">Buy<i class='bx bx-chevron-down'></i></a>
+                     <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Ready To Move</a></li>
+                        <li><a href="#">Furnished</a></li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#">Sell<i class='bx bx-chevron-down'></i></a>
+                     <ul>
+                        <li><a href="#">Post Property</a></li>
+                        <li><a href="#">DashBoard</a></li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#">Rent</a>
+                     <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Flat</a></li>
+                        <li><a href="#">Shop</a></li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#">Help<i class='bx bx-chevron-down'></i></a>
+                     <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html# faq">FAQ</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+
+            <ul>
+               <li><a href="#">Saved <i class='bx bxs-bookmark-heart'></i></a></li>
+               <li><a href="#">Account <i class='bx bx-chevron-down'></i></a>
+                  <ul>
+                     <li>
+                        <a href="login.html">Login</a>
+                     </li>
+                     <li><a href="register.html">Register</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </section>
+      </nav>
+   </header>
+   <!--=======header SECTION END========-->
+
+
+   <!--====== HOME SECTION START ========-->
+   <div class="home">
+ 
+      <section class="center">
+         <form action="search.html" method="post">
+            <h3>Find Your Perfect Home</h3>
+            <div class="box">
+               <p>Enter Location <span>*</span></p>
+               <input type="text" name="location" required maxlength="50" placeholder="Enter Your Prefferd Location" class="input">
+            </div>
+
+            <div class="flex">
+               <div class="box">
+                  <p>Properties<span>*</span></p>
+                  <select name="type" class="input" required>
+                     <option value="flat">Flat</option>
+                     <option value="house">House</option>
+                     <option value="shop">Shop</option>
+                  </select>
+               </div>
+
+               <div class="box">
+                  <p>How Many BHK<span>*</span></p>
+                  <select name="bhk" class="input" required>
+                     <option value="1">1 BHK</option>
+                     <option value="2">2 BHK</option>
+                     <option value="3">3 BHK</option>
+                     <option value="4">4 BHK</option>
+                     <option value="5">5 BHK</option>
+                     <option value="6">6 BHK</option>
+                     <option value="7">7 BHK</option>
+                     <option value="8">9 BHK</option>
+                     <option value="9">8 BHK</option>
+                     <option value="10">10 BHK</option>
+                  </select>
+               </div>
+
+               <div class="box">
+                  <p>Maximum Budget<span>*</span></p>
+                  <select name="minimum" class="input" required>
+                     <option value="5000000">5 lac</option>
+                     <option value="1000000">10 lac</option>
+                     <option value="2000000">20 lac</option>
+                     <option value="3000000">30 lac</option>
+                     <option value="4000000">40 lac</option>
+                     <option value="5000000">50 lac</option>
+                     <option value="6000000">60 lac</option>
+                     <option value="7000000">70 lac</option>
+                     <option value="8000000">80 lac</option>
+                     <option value="9000000">90 lac</option>
+                     <option value="10000000">1 Cr</option>
+                     <option value="20000000">2 Cr</option>
+                     <option value="30000000">3 Cr</option>
+                     <option value="40000000">4 Cr</option>
+                     <option value="50000000">5 Cr</option>
+                     <option value="60000000">6 Cr</option>
+                     <option value="70000000">7 Cr</option>
+                     <option value="80000000">8 Cr</option>
+                     <option value="90000000">9 Cr</option>
+                     <option value="100000000">10 Cr</option>
+                     <option value="150000000">15 Cr</option>
+                     <option value="200000000">20 Cr</option>
+                  </select>
+               </div>
+
+               <div class="box">
+                  <p>Maximum Budget<span>*</span></p>
+                  <select name="minimum" class="input" required>
+                     <option value="5000000">5 lac</option>
+                     <option value="1000000">10 lac</option>
+                     <option value="2000000">20 lac</option>
+                     <option value="3000000">30 lac</option>
+                     <option value="4000000">40 lac</option>
+                     <option value="5000000">50 lac</option>
+                     <option value="6000000">60 lac</option>
+                     <option value="7000000">70 lac</option>
+                     <option value="8000000">80 lac</option>
+                     <option value="9000000">90 lac</option>
+                     <option value="10000000">1 Cr</option>
+                     <option value="20000000">2 Cr</option>
+                     <option value="30000000">3 Cr</option>
+                     <option value="40000000">4 Cr</option>
+                     <option value="50000000">5 Cr</option>
+                     <option value="60000000">6 Cr</option>
+                     <option value="70000000">7 Cr</option>
+                     <option value="80000000">8 Cr</option>
+                     <option value="90000000">9 Cr</option>
+                     <option value="100000000">10 Cr</option>
+                     <option value="150000000">15 Cr</option>
+                     <option value="200000000">20 Cr</option>
+                  </select>
+               </div>
+            </div>
+            <input type="submit" value="search  property" name="search" class="btn">
+         </form>
+      </section>
+   </div>
+   <!--====== HOME SECTION END ========-->
+
+   <!--====== SERVICE SECTION =========-->
+
+   <section class="service">
+      <h1 class="heading">Our Service</h1>
+
+      <div class="box-container">
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>Buy House</h3>
+            <p>
+               uewlifewbjceuiwfkiew
+               fiecuiecewcniwehfe
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>Rent House</h3>
+            <p>
+               uewlifewbjceuiwfkiewfiecuiecew
+               cniwehfejciuchdduiehwiucheiuwnc
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>Sell House</h3>
+            <p>
+               uewlifewbjceuiwfkiewfiecuiecew
+               cniwehfejciuchdduiehwiucheiuwnc
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>Flat And Building</h3>
+            <p>
+               uewlifewbjceuiwfkiewfiecuiecewcn
+               iwehfejciuchdduiehwiucheiuwnc
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>Shops And Malls</h3>
+            <p>
+               uewlifewbjceuiwfkiewfiecuiecewcniw
+               ehfejciuchdduiehwiucheiuwnc
+            </p>
+         </div>
+
+         <div class="box">
+            <img src="House/" alt="">
+            <h3>24/7 Services</h3>
+            <p>
+               uewlifewbjceuiwfkiewfiecuiecewcni
+               wehfejciuchdduiehwiucheiuwnc
+            </p>
+         </div>
+      </div>
+
+
+   </section>
+
+   <!--====== SERVICE SECTION END =========-->
+
+   <!--======= LISTING SECCTION START =======-->
+   <section class="listing">
+      <h1 class="heading">Latest Listing</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="admin">
+               <h3>M</h3>
+               <div>
+                  <p>Martin</p>
+                  <span>2-21-2025</span>
+               </div>
+            </div>
+
+            <div class="thumb">
+               <p class="total-image"><i class='bx bx-images'></i><span>4</span></p>
+               <p class="type"><span>House</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="bx bx-bookmark-heart"></button>
+               </form>
+               <img src="House/download (1).jpeg" alt="">
+            </div>
+
+            <h3 class="name">Modern Flat And Appartment</h3>
+            <p class="location"><i class='bx bx-map'></i><span>Niageria, USA - 62525436</span></p>
+
+            <div class="flex">
+               <p><i class='bx bxs-bed'></i><span>3</span></p>
+               <p><i class='bx bx-bath' ></i><span>2</span></p>
+               <p><i class="bx bx-colaps"></i><span>2</span>750sqft</p>
+            </div>
+            <a href="view-property.html" class="btn">View Property</a>
+         </div>
+
+         <div class="box">
+            <div class="admin">
+               <h3>M</h3>
+               <div>
+                  <p>Martin</p>
+                  <span>2-21-2025</span>
+               </div>
+            </div>
+
+            <div class="thumb">
+               <p class="total-image"><i class='bx bx-images'></i><span>4</span></p>
+               <p class="type"><span>Flat</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="bx bx-bookmark-heart"></button>
+               </form>
+               <img src="House/download (2).jpeg" alt="">
+            </div>
+
+            <h3 class="name">Modern Flat And Appartment</h3>
+            <p class="location"><i class='bx bx-map'></i><span>Niageria, USA - 62525436</span></p>
+
+            <div class="flex">
+               <p><i class='bx bxs-bed'></i><span>3</span></p>
+               <p><i class='bx bx-bath' ></i><span>2</span></p>
+               <p><i class="bx bx-colaps"></i><span>2</span>750sqft</p>
+            </div>
+            <a href="view.property.html" class="btn">View Property</a>
+         </div>
+
+         <div class="box">
+
+            <div class="admin">
+               <h3>M</h3>
+               <div>
+                  <p>Martin</p>
+                  <span>2-21-2025</span>
+               </div>
+            </div>
+
+            <div class="thumb">
+               <p class="total-image"><i class='bx bx-images'></i><span>4</span></p>
+               <p class="type"><span>House</span><span>sale</span></p>
+               <form action="" method="post" class="save">
+                  <button type="submit" name="save" class="bx bx-bookmark-heart"></button>
+               </form>
+               <img src="House/download (3).jpeg" alt="">
+            </div>
+
+            <h3 class="name">Modern Flat And Appartment</h3>
+            <p class="location"><i class='bx bx-map'></i><span>Niageria, USA - 62525436</span></p>
+            
+            <div class="flex">
+               <p><i class='bx bxs-bed'></i><span>3</span></p>
+               <p><i class='bx bx-bath' ></i><span>2</span></p>
+               <p><i class="bx bx-colaps"></i><span>2</span>750sqft</p>
+            </div>
+            <a href="view.property.html" class="btn">View Property</a>
+         </div>
+      </div>
+
+      <div style="margin-top: 2rem; text-align: center;">
+         <a href="listing.html" class="inline-btn">View All</a>
+      </div>
+
+   </section>
+   <!--======= LISTING SECCTION END =======-->
+
+   <!--===== FOOTER SECTION START =====-->
+   <footer class="footer">
+   
+      <section class="flex">
+         <div class="box">
+            <a href="tel:+2348123499536"><i class="bx bxs-phone"></i>
+               <span>+2348123499536</span>
+            </a>
+
+            <a href="tel:+2348059503427"><i class="bx bxs-phone"></i>
+               <span>+2348059503427</span>
+            </a>
+
+            <a href="mailto:ekemartinudochukwu4@gmail.com"><i class="bx bxs-envelope"></i>
+               <span>ekemartinudochukwu4@gmail.com</span>
+            </a>
+
+            <a href="#"><i class="bx bxs-map"></i>
+               <span>Obama Enyiogugu Aboh Mbaise L.G.A</span>
+            </a>
+         </div>
+
+         <div class="box">
+            <a href="home.html"><span>Home</span></a>
+            <a href="about.html"><span>About Us</span></a>
+            <a href="contact.html"><span>Contact Us</span></a>
+            <a href="listings.html"><span>All listings</span></a>
+            <a href="#"><span>Saved Properties</span></a>
+         </div>
+
+         <div class="box">
+            <a href="#"><span>Facebook</span>
+               <i class='bx bxl-facebook-square'></i>
+            </a>
+
+            <a href="#"><span>Instergram</span>
+               <i class='bx bxl-instagram' ></i>
+            </a>
+
+            <a href="#"><span>Twitter</span>
+               <i class='bx bxl-twitter'></i>
+            </a>
+         </div>
+      </section>
+
+      <div class="credit">&copy; Copyright @ 2025 by <span>Tech-Wise</span> | all right reserved!</div>
+   </footer>
+   <!--===== FOOTER SECTION END =====-->
+</body>
+
+</html>
